@@ -7,7 +7,8 @@
 //
 
 #import "QTViewController.h"
-
+#import <QTAlertView.h>
+#import <QTTipsView.h>
 @interface QTViewController ()
 
 @end
@@ -20,6 +21,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[QTAlertView sharedMask] show:[QTTipsView sharTipsView] withType:0];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
