@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'QueryTools_Example' do
+  pod 'QueryTools', :path => '../'
+
+  target 'QueryTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
